@@ -7,9 +7,11 @@ function findPeakElement(nums) {
     var end = nums.length - 1;
     while (start < end) {
         var middle = start + Math.floor((end - start) / 2);
+        // Upward Slope - the next element (middle + 1) is the peak
         if (nums[middle] < nums[middle + 1]) {
             start = middle + 1;
         } else {
+            // Downward Slope - current element (middle) at the peak
             end = middle;
         }
     }
