@@ -32,5 +32,5 @@ console.log(decodeString("3[a]2[bc]"));
 console.log(decodeString("3[a2[c]]"));
 console.log(decodeString("2[abc]3[cd]ef"));
 
-// Time Complexity - O()
-// Space Complexity - O()
+// Time Complexity - O(n)
+// Space Complexity - O(n)
