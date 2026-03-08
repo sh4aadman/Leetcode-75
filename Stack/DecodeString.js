@@ -1,6 +1,6 @@
 // Leetcode - Problem List - Problem 394
 
-// Intuition -
+// Intuition - Since there can have nested structures (e.g., 3[a2[c]]), it's needed a way to remember the "outer" strings and numbers while it's finished processing the "inner" ones. This follows a Last-In, First-Out (LIFO) pattern, making a Stack the perfect data structure.
 
 function decodeString(s) {
   var countStack = [];
